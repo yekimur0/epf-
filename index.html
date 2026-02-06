@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/site-styles.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Price list</title>
+</head>
+<body>
+
+
+
+  <section class="price-list">
+    <div class="container">
+      <div class="price-list__wrapper">
+
+        <button type="button" class="btn-filter-mobile js-btn-filter-mob">Фильтр</button>
+
+        <div class="price-list__filter">
+            <div class="price-list__filter-close">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" style="pointer-events: none;">
+                <path d="M15 16.75L8.875 22.875C8.64583 23.1042 8.35417 23.2188 8 23.2188C7.64583 23.2188 7.35417 23.1042 7.125 22.875C6.89583 22.6458 6.78125 22.3542 6.78125 22C6.78125 21.6458 6.89583 21.3542 7.125 21.125L13.25 15L7.125 8.875C6.89583 8.64583 6.78125 8.35417 6.78125 8C6.78125 7.64583 6.89583 7.35417 7.125 7.125C7.35417 6.89583 7.64583 6.78125 8 6.78125C8.35417 6.78125 8.64583 6.89583 8.875 7.125L15 13.25L21.125 7.125C21.3542 6.89583 21.6458 6.78125 22 6.78125C22.3542 6.78125 22.6458 6.89583 22.875 7.125C23.1042 7.35417 23.2188 7.64583 23.2188 8C23.2188 8.35417 23.1042 8.64583 22.875 8.875L16.75 15L22.875 21.125C23.1042 21.3542 23.2188 21.6458 23.2188 22C23.2188 22.3542 23.1042 22.6458 22.875 22.875C22.6458 23.1042 22.3542 23.2188 22 23.2188C21.6458 23.2188 21.3542 23.1042 21.125 22.875L15 16.75Z" fill="black" />
+              </svg>
+            </div>
+            <div class="filter-price-list">
+                <div class="filter-price-list-block">
+                  <div class="filter-price-list-title">Разделы</div>
+
+                  <div class="options">
+                    <div class="option-wrapper">
+                      <div class="option-title js-option-title active">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3536 4.03556C13.5488 3.8403 13.5488 3.52372 13.3536 3.32845L10.1716 0.146473C9.97631 -0.0487893 9.65973 -0.0487893 9.46447 0.146473C9.2692 0.341735 9.2692 0.658318 9.46447 0.85358L12.2929 3.68201L9.46447 6.51043C9.2692 6.7057 9.2692 7.02228 9.46447 7.21754C9.65973 7.4128 9.97631 7.4128 10.1716 7.21754L13.3536 4.03556ZM0 3.68201V4.18201H13V3.68201V3.18201H0V3.68201Z" fill="black" />
+                        </svg>
+                        Инъекционные препараты
+                      </div>
+                      <div class="options-fields is_active">
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Туринабол</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Провирон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Оксандролон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Метандиенoн</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Кленбутерол</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option-wrapper">
+                      <div class="option-title js-option-title">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3536 4.03556C13.5488 3.8403 13.5488 3.52372 13.3536 3.32845L10.1716 0.146473C9.97631 -0.0487893 9.65973 -0.0487893 9.46447 0.146473C9.2692 0.341735 9.2692 0.658318 9.46447 0.85358L12.2929 3.68201L9.46447 6.51043C9.2692 6.7057 9.2692 7.02228 9.46447 7.21754C9.65973 7.4128 9.97631 7.4128 10.1716 7.21754L13.3536 4.03556ZM0 3.68201V4.18201H13V3.68201V3.18201H0V3.68201Z" fill="black" />
+                        </svg>
+                        Оральные препараты
+                      </div>
+                      <div class="options-fields">
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Туринабол</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Провирон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Оксандролон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Метандиенoн</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Кленбутерол</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option-wrapper">
+                      <div class="option-title js-option-title">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3536 4.03556C13.5488 3.8403 13.5488 3.52372 13.3536 3.32845L10.1716 0.146473C9.97631 -0.0487893 9.65973 -0.0487893 9.46447 0.146473C9.2692 0.341735 9.2692 0.658318 9.46447 0.85358L12.2929 3.68201L9.46447 6.51043C9.2692 6.7057 9.2692 7.02228 9.46447 7.21754C9.65973 7.4128 9.97631 7.4128 10.1716 7.21754L13.3536 4.03556ZM0 3.68201V4.18201H13V3.68201V3.18201H0V3.68201Z" fill="black" />
+                        </svg>
+                        Для потенции, ПКТ, ИА
+                      </div>
+                      <div class="options-fields">
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Туринабол</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Провирон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Оксандролон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Метандиенoн</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Кленбутерол</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option-wrapper">
+                      <div class="option-title js-option-title">
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.3536 4.03556C13.5488 3.8403 13.5488 3.52372 13.3536 3.32845L10.1716 0.146473C9.97631 -0.0487893 9.65973 -0.0487893 9.46447 0.146473C9.2692 0.341735 9.2692 0.658318 9.46447 0.85358L12.2929 3.68201L9.46447 6.51043C9.2692 6.7057 9.2692 7.02228 9.46447 7.21754C9.65973 7.4128 9.97631 7.4128 10.1716 7.21754L13.3536 4.03556ZM0 3.68201V4.18201H13V3.68201V3.18201H0V3.68201Z" fill="black" />
+                        </svg>
+                        ХГЧ и ГР
+                      </div>
+                      <div class="options-fields">
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Туринабол</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Провирон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Оксандролон</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Метандиенoн</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Кленбутерол</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="filter-price-list-block">
+                  <div class="filter-price-list-title">Производитель</div>
+
+                  <div class="options">
+                    <div class="option-wrapper">
+
+                      <div class="options-fields is_active">
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">EPF SRL</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">GD Pharmaceuticals</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Vermodje</label>
+                        </div>
+                        <div class="option-field">
+                          <input type="checkbox">
+                          <label for="">Нет</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="filter-price-list-actions">
+                  <button type="button" class="btn-action btn-action-blue">Применить фильтр</button>
+                  <button type="button" class="btn-action btn-action-red">Сбросить фильтр</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="price-list__items">
+          <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+           <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+           <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+           <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+           <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+           <div class="col-xl-3 col-6 product-item align-items-stretch">
+            <div class="product-item__wrap">
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__img">
+                    <img src="./images/product-1.png" alt="ХГЧ Puretrig® 5000 IU">
+                </a>
+                <a href="price-list/gchx-i-gr/xgch/xgch-puretrig®-5000-iu.html" class="product-item__title">
+                    ХГЧ Puretrig® 5000 IU        </a>
+                <div class="product-item__desc">
+                    <b>Производитель:</b> Gufic Biosciences Ltd.<br>
+                    <b>Действующее вещество</b>: Хорионический гонадотропин человека <br>
+                    <b>Объем флакона</b>: 1 мл<br>
+                    <b>Страна</b>: Индия
+                </div>
+                <form method="post" class="product-item__bottom ms2_form">
+                    <input type="hidden" name="id" value="214">
+                    <input type="hidden" name="count" value="1" data-max="95">
+                    <input type="hidden" name="options" value="[]">
+                    <div class="product-item__bottom-price ">
+                        <div class="product-item__bottom-price-new">3 100 ₽</div>
+                    </div>
+                    <button class="product-item__bottom-btn " type="submit" name="ms2_action" value="cart/add">
+                        <span class="in-basket">в корзину</span>
+                        <span class="add-basket">добавлено</span>
+                    </button>
+                </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+<script src="./js/js.js"></script>
+
+
+</body>
+</html>

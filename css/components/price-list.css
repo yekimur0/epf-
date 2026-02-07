@@ -214,6 +214,7 @@
   .price-list .filter-price-list  {
     max-width: 340px;
     width: 100%;
+    position: relative;
   }
 
   .btn-filter-mobile {
@@ -242,3 +243,4 @@
     }
   }
 }
+

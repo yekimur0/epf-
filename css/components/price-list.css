@@ -235,11 +235,13 @@
   .price-list__filter-close {
     display: block;
     position: absolute;
-    top: 20px;
-    right: 65px;
-
-    
+    top: 15px;
+    right: 15px;
+  }
+  .filter-price-list {
+    position: relative;
   }
 }
+
 
 

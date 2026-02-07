@@ -236,11 +236,10 @@
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 65px;
 
-    svg path {
-      fill: #fff;
-    }
+    
   }
 }
+
 
